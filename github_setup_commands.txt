@@ -1,0 +1,17 @@
+# GitHub Setup Commands
+# Run these commands after creating repository on GitHub
+
+git remote add origin https://github.com/yashsrivastav153/qr-gift.git
+git branch -M main
+git push -u origin main
+
+# After pushing, enable GitHub Pages:
+# 1. Go to repository settings
+# 2. Scroll to "Pages" section
+# 3. Source: Deploy from a branch
+# 4. Branch: main
+# 5. Folder: / (root)
+# 6. Save
+
+# Your website will be live at:
+# https://yashsrivastav153.github.io/qr-gift

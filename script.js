@@ -29,6 +29,22 @@ const photos = [
             hindi2: "bhai ne gift diya hai",
             hehe: "🍫"
         }
+    },
+    {
+        characters: { shinchan: "👩‍🦱", himawari: "👩‍🦰" },
+        message: {
+            hindi1: "Our precious memories",
+            hindi2: "together forever",
+            hehe: "❤️"
+        }
+    },
+    {
+        characters: { shinchan: "👦", himawari: "👧" },
+        message: {
+            hindi1: "Bhai Dooj special",
+            hindi2: "love you sis!",
+            hehe: "🎁"
+        }
     }
 ];
 
@@ -39,23 +55,34 @@ const songs = [
     { title: "Sister Love Song", duration: "0:20" }
 ];
 
-// Page navigation
+// Page navigation with animations
 function showPage(pageNumber) {
-    // Hide all pages
-    document.querySelectorAll('.page').forEach(page => {
-        page.classList.remove('active');
+    const allPages = document.querySelectorAll('.page');
+    const targetPage = document.getElementById(`page${pageNumber}`);
+    
+    // Hide all pages with animation
+    allPages.forEach(page => {
+        if (page.classList.contains('active')) {
+            page.style.animation = 'slideOutToLeft 0.3s ease-in-out forwards';
+            setTimeout(() => {
+                page.classList.remove('active');
+                page.style.animation = '';
+            }, 300);
+        }
     });
     
-    // Show selected page
-    document.getElementById(`page${pageNumber}`).classList.add('active');
-    currentPage = pageNumber;
-    
-    // Special handling for specific pages
-    if (pageNumber === 3) {
-        updatePhotoDisplay();
-    } else if (pageNumber === 4) {
-        updateMusicDisplay();
-    }
+    // Show target page with animation
+    setTimeout(() => {
+        targetPage.classList.add('active');
+        currentPage = pageNumber;
+        
+        // Special handling for specific pages
+        if (pageNumber === 3) {
+            updatePhotoDisplay();
+        } else if (pageNumber === 4) {
+            updateMusicDisplay();
+        }
+    }, 300);
 }
 
 // Tic-tac-toe game functions
@@ -72,14 +99,55 @@ function fillCell(cell) {
 }
 
 function showSuccessMessage() {
-    const successMessage = document.getElementById('success-message');
     const nextBtn = document.getElementById('next-btn-2');
     
-    successMessage.classList.remove('hidden');
-    nextBtn.classList.remove('hidden');
+    // Show popup with confetti
+    showChocolatePopup();
     
-    // Add celebration animation
-    successMessage.style.animation = 'bounce 0.6s ease-in-out';
+    // Show next button after a delay
+    setTimeout(() => {
+        nextBtn.classList.remove('hidden');
+    }, 2000);
+}
+
+// Popup Functions
+function showChocolatePopup() {
+    const popup = document.getElementById('chocolate-popup');
+    popup.classList.add('active');
+    createConfetti();
+}
+
+function closePopup() {
+    const popup = document.getElementById('chocolate-popup');
+    popup.classList.remove('active');
+    // Clear confetti
+    const confettiContainer = document.querySelector('.confetti-container');
+    confettiContainer.innerHTML = '';
+}
+
+function createConfetti() {
+    const confettiContainer = document.querySelector('.confetti-container');
+    
+    // Create 50 confetti pieces
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        
+        // Random position
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.animationDelay = Math.random() * 2 + 's';
+        
+        // Random colors
+        const colors = ['#e74c3c', '#f39c12', '#9b59b6', '#e67e22', '#1abc9c', '#f1c40f'];
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        
+        confettiContainer.appendChild(confetti);
+    }
+    
+    // Remove confetti after animation
+    setTimeout(() => {
+        confettiContainer.innerHTML = '';
+    }, 4000);
 }
 
 // Photo navigation functions
