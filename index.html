@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Gift - Bhai Dooj Special</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page 1: Initial Message -->
+    <div id="page1" class="page active">
+        <div class="card">
+            <div class="header">
+                <h1>FOR MY LOVELY</h1>
+                <h2>SISTER <span class="diamond">♦</span></h2>
+            </div>
+            
+            <div class="greeting">
+                <p class="bhai-dooj">Bhai Dooj</p>
+                <h3 class="happy">Happy</h3>
+                <h4 class="dear-sis">DEAR SIS</h4>
+            </div>
+            
+            <div class="message">
+                <p>You've always been my biggest supporter, my secret keeper, and my forever partner-in-crime 👯‍♀️ On this Bhai Dooj, I just want you to know how lucky I am to have you as my sister.</p>
+            </div>
+            
+            <div class="diamonds">
+                <span class="diamond">♦</span>
+                <span class="diamond">♦</span>
+                <span class="diamond">♦</span>
+            </div>
+            
+            <div class="dancing-characters">
+                <div class="boy">👦</div>
+                <div class="girl">👧</div>
+            </div>
+            
+            <button class="next-btn" onclick="showPage(2)">Next</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Tic-Tac-Toe Game -->
+    <div id="page2" class="page">
+        <div class="card">
+            <h2 class="game-title">Fill in the blanks to get a chocolate 🍫</h2>
+            
+            <div class="tic-tac-toe">
+                <div class="cell" data-cell="0">🍫</div>
+                <div class="cell" data-cell="1">❌</div>
+                <div class="cell" data-cell="2">❌</div>
+                <div class="cell" data-cell="3">❌</div>
+                <div class="cell" data-cell="4" onclick="fillCell(this)"></div>
+                <div class="cell" data-cell="5">❌</div>
+                <div class="cell" data-cell="6">❌</div>
+                <div class="cell" data-cell="7">❌</div>
+                <div class="cell" data-cell="8">🍫</div>
+            </div>
+            
+            <div id="success-message" class="success-message hidden">
+                <p>You successfully unlocked a chocolate treat, yay 🍫</p>
+            </div>
+            
+            <button id="next-btn-2" class="next-btn hidden" onclick="showPage(3)">Next</button>
+        </div>
+    </div>
+
+    <!-- Page 3: Our Precious Memories -->
+    <div id="page3" class="page">
+        <div class="card">
+            <div class="memories-header">
+                <h2>Our Precious Memories <span class="camera">📷</span></h2>
+                <div class="from-to">
+                    <span class="from">FROM: Bhai ✨</span>
+                    <span class="to">TO: My Lovely Sister ❤️</span>
+                </div>
+            </div>
+            
+            <div class="photo-container">
+                <button class="nav-btn prev-btn" onclick="prevPhoto()">‹</button>
+                <div class="photo-content">
+                    <div id="photo-display" class="photo-display">
+                        <div class="cartoon-image">
+                            <div class="shinchan">👦</div>
+                            <div class="himawari">👶</div>
+                        </div>
+                        <div class="photo-message">
+                            <p class="hindi-text">Tu abhi choti hai</p>
+                            <p class="hindi-text">kam bola kar samjhi</p>
+                            <p class="hehe">Hehe</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-btn next-btn" onclick="nextPhoto()">›</button>
+            </div>
+            
+            <div class="memories-footer">
+                <div class="date">DATE: Bhai Dooj ✨</div>
+                <div class="valid">VALID FOR: Forever ✨</div>
+                <div class="closing">With love, your brother ❤️</div>
+            </div>
+            
+            <button class="next-btn" onclick="showPage(4)">Next</button>
+        </div>
+    </div>
+
+    <!-- Page 4: Music Player -->
+    <div id="page4" class="page">
+        <div class="card">
+            <h2 class="music-title">A Few Songs For You ❤️</h2>
+            
+            <div class="album-art">
+                <div class="hugging-characters">
+                    <div class="character1">👦</div>
+                    <div class="character2">👧</div>
+                    <div class="heart">❤️</div>
+                </div>
+            </div>
+            
+            <div class="now-playing">
+                <p>NOW PLAYING</p>
+                <h3>Phoolo Ka Taaron Ka</h3>
+            </div>
+            
+            <div class="progress-container">
+                <span class="time">0:01</span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                    <div class="progress-handle"></div>
+                </div>
+                <span class="time">0:25</span>
+            </div>
+            
+            <div class="music-controls">
+                <button class="control-btn" onclick="rewind()">⏪</button>
+                <button class="control-btn play-pause" onclick="togglePlay()">⏸️</button>
+                <button class="control-btn" onclick="fastForward()">⏩</button>
+            </div>
+            
+            <div class="music-nav">
+                <button class="nav-text-btn" onclick="showPage(3)">Back</button>
+                <button class="nav-text-btn" onclick="showPage(5)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Final Thank You -->
+    <div id="page5" class="page">
+        <div class="card">
+            <div class="thank-you-header">
+                <p class="from-bhal">✦ FROM YOUR BHAL, WITH LOVE ✦</p>
+                <h1 class="thank-you-title">Thank You</h1>
+                <h2 class="thank-you-subtitle">FOR ALWAYS BEING THERE❤️</h2>
+            </div>
+            
+            <div class="thank-you-message">
+                <p>You make every small thing brighter and happier. I'm lucky to have you — thanks for being the sweetest part of my days.</p>
+            </div>
+            
+            <div class="hello-kitty">
+                <div class="kitty">🐱</div>
+                <div class="kitty-sign">Thank you</div>
+            </div>
+            
+            <div class="final-footer">
+                <p>made with ❤️ chocolates & sprinkles — always your love</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

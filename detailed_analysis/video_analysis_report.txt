@@ -1,0 +1,18 @@
+=== COMPLETE VIDEO ANALYSIS REPORT ===
+
+Video Duration: 21.63 seconds
+Total QR Codes Detected: 0
+
+No QR codes were automatically detected.
+This could mean:
+1. QR codes are too small or blurry
+2. QR codes are not standard format
+3. Manual analysis of frames is needed
+
+
+NEXT STEPS:
+====================
+1. Check the extracted frame images manually
+2. Look for webpages that open after QR scanning
+3. Document all text, images, buttons, and design elements
+4. Note the sequence of pages and navigation flow

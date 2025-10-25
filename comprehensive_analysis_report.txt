@@ -1,0 +1,1039 @@
+=== COMPREHENSIVE VIDEO ANALYSIS REPORT ===
+
+Total Frames Analyzed: 66
+Video Duration: 21.5 seconds
+
+FRAME-BY-FRAME ANALYSIS:
+==================================================
+
+Frame: analysis_frame_000_time_0.0s.jpg
+Time: 0.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [16.90534397  7.88481879 20.40755425]
+Dominant Colors: [[6, 3, 3], [48, 8, 99], [73, 86, 110], [183, 107, 117], [30, 14, 42]]
+Contours: 31
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.008
+------------------------------
+
+Frame: analysis_frame_030_time_1.0s.jpg
+Time: 1.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [25.42799913 19.61272135 35.23081489]
+Dominant Colors: [[23, 118, 228], [7, 3, 5], [146, 198, 216], [45, 14, 78], [128, 84, 106]]
+Contours: 114
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.016
+------------------------------
+
+Frame: analysis_frame_060_time_2.0s.jpg
+Time: 2.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [37.63328234 38.04006836 48.55208442]
+Dominant Colors: [[138, 171, 193], [74, 80, 119], [1, 0, 1], [47, 33, 34], [15, 118, 235]]
+Contours: 233
+Text Regions: 1
+Rectangles: 2
+Edge Density: 0.026
+------------------------------
+
+Frame: analysis_frame_090_time_3.0s.jpg
+Time: 3.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [30.64797418 28.34246094 35.24527344]
+Dominant Colors: [[78, 94, 159], [129, 135, 157], [74, 71, 88], [0, 0, 0], [39, 31, 33]]
+Contours: 76
+Text Regions: 3
+Rectangles: 1
+Edge Density: 0.014
+------------------------------
+
+Frame: analysis_frame_120_time_4.0s.jpg
+Time: 4.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.11143663 63.64715169 77.97370443]
+Dominant Colors: [[58, 41, 46], [51, 73, 122], [159, 167, 194], [0, 0, 0], [31, 16, 19]]
+Contours: 60
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.012
+------------------------------
+
+Frame: analysis_frame_150_time_5.0s.jpg
+Time: 5.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.4353342  62.74583225 76.95396376]
+Dominant Colors: [[46, 67, 114], [1, 0, 1], [45, 27, 30], [111, 112, 145], [159, 168, 194]]
+Contours: 176
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.020
+------------------------------
+
+Frame: analysis_frame_180_time_6.0s.jpg
+Time: 6.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [62.76207682 64.47693034 78.66212999]
+Dominant Colors: [[46, 66, 111], [1, 1, 1], [158, 166, 193], [47, 28, 30], [83, 96, 145]]
+Contours: 82
+Text Regions: 1
+Rectangles: 10
+Edge Density: 0.019
+------------------------------
+
+Frame: analysis_frame_210_time_7.0s.jpg
+Time: 7.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [62.85921549 62.30363173 77.00025499]
+Dominant Colors: [[62, 75, 131], [1, 0, 0], [158, 164, 194], [58, 42, 50], [35, 19, 21]]
+Contours: 49
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.016
+------------------------------
+
+Frame: analysis_frame_240_time_8.0s.jpg
+Time: 8.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.30710612 63.36547635 77.30221137]
+Dominant Colors: [[158, 165, 194], [58, 41, 50], [56, 73, 123], [34, 18, 19], [0, 0, 0]]
+Contours: 52
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.011
+------------------------------
+
+Frame: analysis_frame_270_time_9.0s.jpg
+Time: 9.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 91.43996419  95.22053277 113.02902561]
+Dominant Colors: [[0, 0, 0], [163, 169, 196], [128, 143, 181], [86, 89, 141], [43, 18, 178]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.016
+------------------------------
+
+Frame: analysis_frame_300_time_10.0s.jpg
+Time: 10.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 91.45254557  95.31261393 112.98004015]
+Dominant Colors: [[46, 24, 171], [163, 170, 197], [97, 106, 154], [0, 0, 0], [140, 150, 184]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.019
+------------------------------
+
+Frame: analysis_frame_330_time_11.0s.jpg
+Time: 11.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 90.11961155  93.27597222 110.94856337]
+Dominant Colors: [[47, 31, 38], [61, 48, 163], [163, 169, 197], [0, 0, 0], [123, 135, 173]]
+Contours: 217
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.021
+------------------------------
+
+Frame: analysis_frame_360_time_12.0s.jpg
+Time: 12.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.5318316  61.73686957 74.00311957]
+Dominant Colors: [[50, 68, 116], [47, 29, 30], [112, 114, 149], [1, 1, 1], [158, 167, 192]]
+Contours: 166
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.020
+------------------------------
+
+Frame: analysis_frame_390_time_13.0s.jpg
+Time: 13.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [56.93248372 57.41611979 71.68105577]
+Dominant Colors: [[48, 63, 112], [160, 168, 194], [103, 107, 164], [1, 0, 0], [40, 23, 25]]
+Contours: 143
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.019
+------------------------------
+
+Frame: analysis_frame_420_time_14.0s.jpg
+Time: 14.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 92.12238824  95.06850369 111.19223633]
+Dominant Colors: [[0, 0, 0], [66, 60, 79], [144, 149, 177], [166, 172, 197], [85, 88, 151]]
+Contours: 180
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.019
+------------------------------
+
+Frame: analysis_frame_450_time_15.0s.jpg
+Time: 15.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.54543728 62.65092773 77.11606662]
+Dominant Colors: [[76, 91, 137], [158, 166, 193], [43, 24, 30], [1, 0, 1], [43, 60, 104]]
+Contours: 30
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.014
+------------------------------
+
+Frame: analysis_frame_480_time_16.0s.jpg
+Time: 16.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.66327257 61.70690647 77.23941623]
+Dominant Colors: [[74, 89, 147], [40, 20, 26], [160, 166, 194], [0, 0, 0], [47, 59, 104]]
+Contours: 85
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.015
+------------------------------
+
+Frame: analysis_frame_510_time_17.0s.jpg
+Time: 17.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.04560655 61.95496094 76.83584527]
+Dominant Colors: [[70, 84, 136], [40, 20, 26], [1, 0, 0], [45, 54, 100], [159, 166, 193]]
+Contours: 86
+Text Regions: 2
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: analysis_frame_540_time_18.0s.jpg
+Time: 18.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 89.9044477   92.34202474 112.11135742]
+Dominant Colors: [[165, 169, 199], [72, 80, 131], [0, 0, 0], [106, 100, 174], [153, 157, 192]]
+Contours: 89
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: analysis_frame_570_time_19.0s.jpg
+Time: 19.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 92.05291341  94.42963867 113.20208333]
+Dominant Colors: [[163, 168, 197], [80, 59, 73], [143, 148, 182], [0, 0, 0], [92, 85, 169]]
+Contours: 93
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: analysis_frame_600_time_20.0s.jpg
+Time: 20.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [65.68643229 67.79484266 81.66960503]
+Dominant Colors: [[2, 1, 1], [43, 60, 102], [45, 24, 27], [159, 167, 192], [74, 89, 135]]
+Contours: 24
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.019
+------------------------------
+
+Frame: analysis_frame_630_time_21.0s.jpg
+Time: 21.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 93.05538628  95.71360026 113.14814562]
+Dominant Colors: [[78, 69, 85], [1, 0, 0], [132, 132, 164], [80, 67, 173], [162, 168, 197]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0000_time_0.0s.jpg
+Time: 0.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [16.90534397  7.88481879 20.40755425]
+Dominant Colors: [[73, 86, 110], [183, 107, 117], [6, 3, 3], [48, 8, 99], [29, 13, 42]]
+Contours: 31
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.008
+------------------------------
+
+Frame: detailed_frame_0001_time_0.5s.jpg
+Time: 0.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [18.96601128  8.53688477 21.04704753]
+Dominant Colors: [[186, 96, 108], [51, 29, 31], [44, 6, 92], [74, 85, 110], [7, 2, 5]]
+Contours: 29
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.008
+------------------------------
+
+Frame: detailed_frame_0002_time_1.0s.jpg
+Time: 1.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [25.42799913 19.61272135 35.23081489]
+Dominant Colors: [[7, 3, 5], [23, 118, 228], [146, 198, 216], [45, 14, 78], [127, 84, 106]]
+Contours: 114
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.016
+------------------------------
+
+Frame: detailed_frame_0003_time_1.5s.jpg
+Time: 1.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [48.44174371 41.70995768 55.5366569 ]
+Dominant Colors: [[62, 178, 240], [0, 0, 0], [49, 34, 37], [99, 81, 106], [151, 123, 184]]
+Contours: 168
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0004_time_2.0s.jpg
+Time: 2.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [37.63328234 38.04006836 48.55208442]
+Dominant Colors: [[47, 33, 34], [15, 118, 235], [1, 0, 1], [138, 171, 193], [74, 80, 119]]
+Contours: 233
+Text Regions: 1
+Rectangles: 2
+Edge Density: 0.026
+------------------------------
+
+Frame: detailed_frame_0005_time_2.5s.jpg
+Time: 2.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [32.44338216 33.32462023 43.87520508]
+Dominant Colors: [[65, 79, 117], [1, 0, 1], [115, 111, 156], [43, 33, 37], [62, 180, 241]]
+Contours: 93
+Text Regions: 1
+Rectangles: 4
+Edge Density: 0.018
+------------------------------
+
+Frame: detailed_frame_0006_time_3.0s.jpg
+Time: 3.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [30.64797418 28.34246094 35.24527344]
+Dominant Colors: [[0, 0, 0], [131, 139, 161], [39, 31, 33], [72, 68, 85], [82, 95, 153]]
+Contours: 76
+Text Regions: 3
+Rectangles: 1
+Edge Density: 0.014
+------------------------------
+
+Frame: detailed_frame_0007_time_3.5s.jpg
+Time: 3.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.55575629 64.23465495 78.66264974]
+Dominant Colors: [[160, 168, 195], [54, 79, 129], [42, 24, 26], [1, 0, 0], [51, 52, 84]]
+Contours: 46
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.010
+------------------------------
+
+Frame: detailed_frame_0008_time_4.0s.jpg
+Time: 4.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.11143663 63.64715169 77.97370443]
+Dominant Colors: [[46, 28, 30], [62, 84, 134], [44, 62, 106], [1, 0, 1], [159, 167, 194]]
+Contours: 60
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.012
+------------------------------
+
+Frame: detailed_frame_0009_time_4.5s.jpg
+Time: 4.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.90086806 63.72866536 78.19649306]
+Dominant Colors: [[2, 1, 1], [69, 86, 134], [160, 167, 195], [43, 62, 108], [45, 26, 30]]
+Contours: 91
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0010_time_5.0s.jpg
+Time: 5.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.4353342  62.74583225 76.95396376]
+Dominant Colors: [[2, 1, 1], [46, 67, 114], [45, 27, 31], [110, 110, 143], [159, 168, 194]]
+Contours: 176
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.020
+------------------------------
+
+Frame: detailed_frame_0011_time_5.5s.jpg
+Time: 5.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.07267253 65.41130859 78.9404872 ]
+Dominant Colors: [[157, 166, 193], [0, 0, 0], [56, 40, 46], [31, 16, 18], [51, 73, 119]]
+Contours: 44
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.010
+------------------------------
+
+Frame: detailed_frame_0012_time_6.0s.jpg
+Time: 6.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [62.76207682 64.47693034 78.66212999]
+Dominant Colors: [[46, 27, 29], [158, 166, 193], [46, 65, 109], [80, 94, 143], [1, 0, 1]]
+Contours: 82
+Text Regions: 1
+Rectangles: 10
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0013_time_6.5s.jpg
+Time: 6.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.17376953 63.39523872 77.3465191 ]
+Dominant Colors: [[72, 87, 139], [1, 0, 0], [160, 167, 195], [49, 55, 98], [40, 22, 24]]
+Contours: 103
+Text Regions: 1
+Rectangles: 8
+Edge Density: 0.018
+------------------------------
+
+Frame: detailed_frame_0014_time_7.0s.jpg
+Time: 7.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [62.85921549 62.30363173 77.00025499]
+Dominant Colors: [[158, 164, 194], [41, 23, 25], [54, 57, 96], [1, 0, 0], [70, 84, 142]]
+Contours: 49
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.016
+------------------------------
+
+Frame: detailed_frame_0015_time_7.5s.jpg
+Time: 7.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.08406684 62.28466905 77.32714952]
+Dominant Colors: [[159, 164, 195], [0, 0, 0], [40, 22, 24], [58, 50, 81], [68, 84, 141]]
+Contours: 150
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.016
+------------------------------
+
+Frame: detailed_frame_0016_time_8.0s.jpg
+Time: 8.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.30710612 63.36547635 77.30221137]
+Dominant Colors: [[0, 0, 0], [158, 165, 194], [58, 41, 48], [34, 17, 19], [56, 72, 122]]
+Contours: 52
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.011
+------------------------------
+
+Frame: detailed_frame_0017_time_8.5s.jpg
+Time: 8.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.25590061 63.90244032 77.02174805]
+Dominant Colors: [[56, 72, 123], [60, 43, 50], [35, 18, 20], [0, 0, 0], [159, 167, 193]]
+Contours: 82
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0018_time_9.0s.jpg
+Time: 9.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 91.43996419  95.22053277 113.02902561]
+Dominant Colors: [[163, 169, 196], [129, 144, 182], [88, 91, 143], [0, 0, 0], [43, 18, 178]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.016
+------------------------------
+
+Frame: detailed_frame_0019_time_9.5s.jpg
+Time: 9.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 91.63027669  95.04311632 113.24027886]
+Dominant Colors: [[130, 143, 181], [163, 169, 197], [42, 17, 178], [0, 0, 0], [86, 89, 141]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.017
+------------------------------
+
+Frame: detailed_frame_0020_time_10.0s.jpg
+Time: 10.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 91.45254557  95.31261393 112.98004015]
+Dominant Colors: [[139, 149, 183], [163, 170, 197], [0, 0, 0], [95, 104, 153], [45, 21, 173]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0021_time_10.5s.jpg
+Time: 10.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 92.05126628  95.35783529 113.39825629]
+Dominant Colors: [[164, 170, 197], [140, 149, 184], [50, 32, 152], [102, 110, 156], [0, 0, 0]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.020
+------------------------------
+
+Frame: detailed_frame_0022_time_11.0s.jpg
+Time: 11.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 90.11961155  93.27597222 110.94856337]
+Dominant Colors: [[122, 135, 173], [60, 46, 164], [0, 0, 0], [47, 31, 38], [163, 169, 197]]
+Contours: 217
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.021
+------------------------------
+
+Frame: detailed_frame_0023_time_11.5s.jpg
+Time: 11.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [62.10453125 63.46827908 75.75631619]
+Dominant Colors: [[57, 81, 129], [61, 46, 51], [158, 166, 193], [37, 21, 21], [0, 0, 0]]
+Contours: 68
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.012
+------------------------------
+
+Frame: detailed_frame_0024_time_12.0s.jpg
+Time: 12.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.5318316  61.73686957 74.00311957]
+Dominant Colors: [[109, 112, 146], [158, 167, 192], [1, 1, 1], [47, 29, 30], [49, 67, 116]]
+Contours: 166
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.020
+------------------------------
+
+Frame: detailed_frame_0025_time_12.5s.jpg
+Time: 12.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [62.70034614 62.64626085 74.85924588]
+Dominant Colors: [[0, 0, 0], [160, 167, 194], [59, 40, 47], [57, 74, 123], [36, 19, 19]]
+Contours: 44
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.014
+------------------------------
+
+Frame: detailed_frame_0026_time_13.0s.jpg
+Time: 13.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [56.93248372 57.41611979 71.68105577]
+Dominant Colors: [[1, 0, 0], [103, 107, 164], [160, 168, 194], [48, 63, 112], [40, 23, 25]]
+Contours: 143
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0027_time_13.5s.jpg
+Time: 13.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [63.61613932 63.52557509 75.7889898 ]
+Dominant Colors: [[63, 80, 132], [61, 45, 63], [38, 21, 22], [0, 0, 0], [161, 168, 194]]
+Contours: 120
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0028_time_14.0s.jpg
+Time: 14.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 92.12238824  95.06850369 111.19223633]
+Dominant Colors: [[145, 150, 178], [0, 0, 0], [66, 60, 79], [166, 172, 197], [85, 89, 151]]
+Contours: 180
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0029_time_14.5s.jpg
+Time: 14.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.98454319 64.16701389 78.45233181]
+Dominant Colors: [[38, 21, 26], [1, 0, 0], [55, 77, 124], [160, 167, 194], [48, 48, 78]]
+Contours: 21
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.010
+------------------------------
+
+Frame: detailed_frame_0030_time_15.0s.jpg
+Time: 15.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.54543728 62.65092773 77.11606662]
+Dominant Colors: [[158, 166, 193], [1, 0, 1], [76, 91, 137], [43, 60, 104], [43, 24, 30]]
+Contours: 30
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.014
+------------------------------
+
+Frame: detailed_frame_0031_time_15.5s.jpg
+Time: 15.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.74192274 61.7893674  77.50193251]
+Dominant Colors: [[0, 0, 0], [160, 166, 194], [48, 60, 107], [40, 21, 27], [75, 89, 148]]
+Contours: 31
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.015
+------------------------------
+
+Frame: detailed_frame_0032_time_16.0s.jpg
+Time: 16.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.66327257 61.70690647 77.23941623]
+Dominant Colors: [[40, 20, 26], [160, 166, 194], [74, 89, 148], [0, 0, 0], [47, 59, 105]]
+Contours: 85
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.015
+------------------------------
+
+Frame: detailed_frame_0033_time_16.5s.jpg
+Time: 16.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [60.02677517 61.28139648 76.92138997]
+Dominant Colors: [[39, 20, 25], [45, 57, 103], [160, 166, 194], [70, 87, 143], [0, 0, 0]]
+Contours: 92
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.014
+------------------------------
+
+Frame: detailed_frame_0034_time_17.0s.jpg
+Time: 17.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [61.04560655 61.95496094 76.83584527]
+Dominant Colors: [[70, 84, 136], [40, 20, 26], [1, 0, 0], [44, 54, 100], [159, 166, 193]]
+Contours: 86
+Text Regions: 2
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0035_time_17.5s.jpg
+Time: 17.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 89.72646376  92.25460829 111.739324  ]
+Dominant Colors: [[140, 146, 182], [163, 168, 198], [96, 89, 167], [0, 0, 0], [68, 78, 122]]
+Contours: 2
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0036_time_18.0s.jpg
+Time: 18.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 89.9044477   92.34202474 112.11135742]
+Dominant Colors: [[71, 80, 127], [101, 95, 172], [165, 169, 199], [152, 156, 191], [0, 0, 0]]
+Contours: 89
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0037_time_18.5s.jpg
+Time: 18.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 90.16578234  92.53467448 112.29884549]
+Dominant Colors: [[0, 0, 0], [130, 135, 177], [75, 83, 128], [90, 75, 181], [163, 168, 198]]
+Contours: 83
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0038_time_19.0s.jpg
+Time: 19.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 92.05291341  94.42963867 113.20208333]
+Dominant Colors: [[0, 0, 0], [163, 168, 197], [79, 58, 70], [94, 87, 168], [144, 149, 183]]
+Contours: 93
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.013
+------------------------------
+
+Frame: detailed_frame_0039_time_19.5s.jpg
+Time: 19.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [66.23695747 68.10153103 82.21485786]
+Dominant Colors: [[44, 24, 27], [72, 88, 135], [44, 61, 102], [2, 1, 1], [159, 166, 193]]
+Contours: 143
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.016
+------------------------------
+
+Frame: detailed_frame_0040_time_20.0s.jpg
+Time: 20.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [65.68643229 67.79484266 81.66960503]
+Dominant Colors: [[73, 88, 134], [45, 25, 27], [159, 167, 192], [42, 60, 102], [2, 1, 1]]
+Contours: 24
+Text Regions: 1
+Rectangles: 0
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0041_time_20.5s.jpg
+Time: 20.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 93.35968641  96.1073839  113.50185113]
+Dominant Colors: [[132, 132, 164], [1, 0, 0], [78, 71, 90], [80, 67, 175], [163, 169, 198]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0042_time_21.0s.jpg
+Time: 21.0s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 93.05538628  95.71360026 113.14814562]
+Dominant Colors: [[79, 70, 86], [132, 132, 164], [162, 168, 197], [1, 0, 0], [80, 66, 174]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.019
+------------------------------
+
+Frame: detailed_frame_0043_time_21.5s.jpg
+Time: 21.5s
+Dimensions: (720, 1280)
+Mean Color (BGR): [ 92.96171984  95.74575521 113.35754774]
+Dominant Colors: [[78, 69, 87], [0, 0, 0], [80, 66, 174], [131, 131, 164], [163, 169, 198]]
+Contours: 1
+Text Regions: 1
+Rectangles: 1
+Edge Density: 0.020
+------------------------------
+
+POTENTIAL WEBPAGE TRANSITIONS:
+========================================
+Transition at 1.0s:
+  File: analysis_frame_030_time_1.0s.jpg
+  Color change: 20.7
+  Contour change: 83
+  Edge change: 0.009
+------------------------------
+Transition at 2.0s:
+  File: analysis_frame_060_time_2.0s.jpg
+  Color change: 25.8
+  Contour change: 119
+  Edge change: 0.010
+------------------------------
+Transition at 3.0s:
+  File: analysis_frame_090_time_3.0s.jpg
+  Color change: 17.9
+  Contour change: 157
+  Edge change: 0.012
+------------------------------
+Transition at 4.0s:
+  File: analysis_frame_120_time_4.0s.jpg
+  Color change: 63.2
+  Contour change: 16
+  Edge change: 0.002
+------------------------------
+Transition at 5.0s:
+  File: analysis_frame_150_time_5.0s.jpg
+  Color change: 1.5
+  Contour change: 116
+  Edge change: 0.009
+------------------------------
+Transition at 6.0s:
+  File: analysis_frame_180_time_6.0s.jpg
+  Color change: 3.4
+  Contour change: 94
+  Edge change: 0.001
+------------------------------
+Transition at 7.0s:
+  File: analysis_frame_210_time_7.0s.jpg
+  Color change: 2.7
+  Contour change: 33
+  Edge change: 0.003
+------------------------------
+Transition at 9.0s:
+  File: analysis_frame_270_time_9.0s.jpg
+  Color change: 55.5
+  Contour change: 51
+  Edge change: 0.004
+------------------------------
+Transition at 11.0s:
+  File: analysis_frame_330_time_11.0s.jpg
+  Color change: 3.2
+  Contour change: 216
+  Edge change: 0.002
+------------------------------
+Transition at 12.0s:
+  File: analysis_frame_360_time_12.0s.jpg
+  Color change: 56.9
+  Contour change: 51
+  Edge change: 0.001
+------------------------------
+Transition at 13.0s:
+  File: analysis_frame_390_time_13.0s.jpg
+  Color change: 6.1
+  Contour change: 23
+  Edge change: 0.001
+------------------------------
+Transition at 14.0s:
+  File: analysis_frame_420_time_14.0s.jpg
+  Color change: 64.9
+  Contour change: 37
+  Edge change: 0.000
+------------------------------
+Transition at 15.0s:
+  File: analysis_frame_450_time_15.0s.jpg
+  Color change: 56.6
+  Contour change: 150
+  Edge change: 0.005
+------------------------------
+Transition at 16.0s:
+  File: analysis_frame_480_time_16.0s.jpg
+  Color change: 1.0
+  Contour change: 55
+  Edge change: 0.001
+------------------------------
+Transition at 18.0s:
+  File: analysis_frame_540_time_18.0s.jpg
+  Color change: 54.8
+  Contour change: 3
+  Edge change: 0.000
+------------------------------
+Transition at 20.0s:
+  File: analysis_frame_600_time_20.0s.jpg
+  Color change: 49.0
+  Contour change: 69
+  Edge change: 0.006
+------------------------------
+Transition at 21.0s:
+  File: analysis_frame_630_time_21.0s.jpg
+  Color change: 50.2
+  Contour change: 23
+  Edge change: 0.000
+------------------------------
+Transition at 0.0s:
+  File: detailed_frame_0000_time_0.0s.jpg
+  Color change: 148.7
+  Contour change: 30
+  Edge change: 0.012
+------------------------------
+Transition at 1.0s:
+  File: detailed_frame_0002_time_1.0s.jpg
+  Color change: 19.1
+  Contour change: 85
+  Edge change: 0.008
+------------------------------
+Transition at 1.5s:
+  File: detailed_frame_0003_time_1.5s.jpg
+  Color change: 37.8
+  Contour change: 54
+  Edge change: 0.002
+------------------------------
+Transition at 2.0s:
+  File: detailed_frame_0004_time_2.0s.jpg
+  Color change: 13.4
+  Contour change: 65
+  Edge change: 0.007
+------------------------------
+Transition at 2.5s:
+  File: detailed_frame_0005_time_2.5s.jpg
+  Color change: 8.4
+  Contour change: 140
+  Edge change: 0.008
+------------------------------
+Transition at 3.0s:
+  File: detailed_frame_0006_time_3.0s.jpg
+  Color change: 10.1
+  Contour change: 17
+  Edge change: 0.004
+------------------------------
+Transition at 3.5s:
+  File: detailed_frame_0007_time_3.5s.jpg
+  Color change: 64.3
+  Contour change: 30
+  Edge change: 0.004
+------------------------------
+Transition at 4.0s:
+  File: detailed_frame_0008_time_4.0s.jpg
+  Color change: 1.0
+  Contour change: 14
+  Edge change: 0.001
+------------------------------
+Transition at 4.5s:
+  File: detailed_frame_0009_time_4.5s.jpg
+  Color change: 0.8
+  Contour change: 31
+  Edge change: 0.002
+------------------------------
+Transition at 5.0s:
+  File: detailed_frame_0010_time_5.0s.jpg
+  Color change: 2.2
+  Contour change: 85
+  Edge change: 0.007
+------------------------------
+Transition at 5.5s:
+  File: detailed_frame_0011_time_5.5s.jpg
+  Color change: 4.2
+  Contour change: 132
+  Edge change: 0.010
+------------------------------
+Transition at 6.0s:
+  File: detailed_frame_0012_time_6.0s.jpg
+  Color change: 1.0
+  Contour change: 38
+  Edge change: 0.009
+------------------------------
+Transition at 6.5s:
+  File: detailed_frame_0013_time_6.5s.jpg
+  Color change: 1.8
+  Contour change: 21
+  Edge change: 0.002
+------------------------------
+Transition at 7.0s:
+  File: detailed_frame_0014_time_7.0s.jpg
+  Color change: 1.2
+  Contour change: 54
+  Edge change: 0.002
+------------------------------
+Transition at 7.5s:
+  File: detailed_frame_0015_time_7.5s.jpg
+  Color change: 0.4
+  Contour change: 101
+  Edge change: 0.000
+------------------------------
+Transition at 8.0s:
+  File: detailed_frame_0016_time_8.0s.jpg
+  Color change: 1.1
+  Contour change: 98
+  Edge change: 0.004
+------------------------------
+Transition at 8.5s:
+  File: detailed_frame_0017_time_8.5s.jpg
+  Color change: 0.6
+  Contour change: 30
+  Edge change: 0.002
+------------------------------
+Transition at 9.0s:
+  File: detailed_frame_0018_time_9.0s.jpg
+  Color change: 55.4
+  Contour change: 81
+  Edge change: 0.003
+------------------------------
+Transition at 11.0s:
+  File: detailed_frame_0022_time_11.0s.jpg
+  Color change: 3.8
+  Contour change: 216
+  Edge change: 0.001
+------------------------------
+Transition at 11.5s:
+  File: detailed_frame_0023_time_11.5s.jpg
+  Color change: 54.0
+  Contour change: 149
+  Edge change: 0.008
+------------------------------
+Transition at 12.0s:
+  File: detailed_frame_0024_time_12.0s.jpg
+  Color change: 2.9
+  Contour change: 98
+  Edge change: 0.008
+------------------------------
+Transition at 12.5s:
+  File: detailed_frame_0025_time_12.5s.jpg
+  Color change: 2.5
+  Contour change: 122
+  Edge change: 0.006
+------------------------------
+Transition at 13.0s:
+  File: detailed_frame_0026_time_13.0s.jpg
+  Color change: 8.4
+  Contour change: 99
+  Edge change: 0.005
+------------------------------
+Transition at 13.5s:
+  File: detailed_frame_0027_time_13.5s.jpg
+  Color change: 9.9
+  Contour change: 23
+  Edge change: 0.006
+------------------------------
+Transition at 14.0s:
+  File: detailed_frame_0028_time_14.0s.jpg
+  Color change: 55.3
+  Contour change: 60
+  Edge change: 0.006
+------------------------------
+Transition at 14.5s:
+  File: detailed_frame_0029_time_14.5s.jpg
+  Color change: 54.2
+  Contour change: 159
+  Edge change: 0.010
+------------------------------
+Transition at 16.0s:
+  File: detailed_frame_0032_time_16.0s.jpg
+  Color change: 0.3
+  Contour change: 54
+  Edge change: 0.000
+------------------------------
+Transition at 17.5s:
+  File: detailed_frame_0035_time_17.5s.jpg
+  Color change: 54.4
+  Contour change: 84
+  Edge change: 0.000
+------------------------------
+Transition at 18.0s:
+  File: detailed_frame_0036_time_18.0s.jpg
+  Color change: 0.4
+  Contour change: 87
+  Edge change: 0.000
+------------------------------
+Transition at 19.5s:
+  File: detailed_frame_0039_time_19.5s.jpg
+  Color change: 48.2
+  Contour change: 50
+  Edge change: 0.003
+------------------------------
+Transition at 20.0s:
+  File: detailed_frame_0040_time_20.0s.jpg
+  Color change: 0.8
+  Contour change: 119
+  Edge change: 0.003
+------------------------------
+Transition at 20.5s:
+  File: detailed_frame_0041_time_20.5s.jpg
+  Color change: 50.8
+  Contour change: 23
+  Edge change: 0.000
+------------------------------
+
+Total Transitions Detected: 49
+
+RECOMMENDATIONS:
+====================
+1. Check frames with significant changes for QR code scans
+2. Look for webpage content in transition frames
+3. Analyze frames with high text region counts
+4. Examine frames with multiple rectangles (UI elements)

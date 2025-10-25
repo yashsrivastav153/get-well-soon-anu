@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffeef8, #f0f8ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.page.active {
+    display: block;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    min-height: 600px;
+}
+
+/* Page 1 Styles */
+.header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.header h2 {
+    color: #e74c3c;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.diamond {
+    color: #e74c3c;
+    font-size: 20px;
+}
+
+.greeting {
+    margin: 20px 0;
+}
+
+.bhai-dooj {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.happy {
+    color: #e74c3c;
+    font-size: 32px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.dear-sis {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.message {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.diamonds {
+    margin: 20px 0;
+}
+
+.diamonds .diamond {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.dancing-characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.boy, .girl {
+    font-size: 48px;
+    animation: dance 2s infinite;
+}
+
+@keyframes dance {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(5deg); }
+    50% { transform: translateY(0px) rotate(0deg); }
+    75% { transform: translateY(-10px) rotate(-5deg); }
+}
+
+/* Page 2 Styles */
+.game-title {
+    color: #e74c3c;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 250px;
+    margin: 0 auto 30px;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    background: #ffeef8;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cell:hover {
+    background: #fce4ec;
+    transform: scale(1.05);
+}
+
+.cell:empty {
+    background: #fff;
+}
+
+.success-message {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Page 3 Styles */
+.memories-header h2 {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.camera {
+    font-size: 20px;
+}
+
+.from-to {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #e74c3c;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.photo-display {
+    flex: 1;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartoon-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.shinchan, .himawari {
+    font-size: 48px;
+}
+
+.photo-message {
+    text-align: center;
+}
+
+.hindi-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.hehe {
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.memories-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.date, .valid, .closing {
+    margin: 5px 0;
+}
+
+/* Page 4 Styles */
+.music-title {
+    color: #e74c3c;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.album-art {
+    width: 200px;
+    height: 200px;
+    background: #ffeef8;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hugging-characters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.character1, .character2 {
+    font-size: 48px;
+}
+
+.heart {
+    position: absolute;
+    top: -20px;
+    font-size: 24px;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.now-playing {
+    margin-bottom: 20px;
+}
+
+.now-playing p {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.now-playing h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 12px;
+    color: #666;
+    min-width: 30px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-fill {
+    width: 20%;
+    height: 100%;
+    background: #e74c3c;
+    border-radius: 2px;
+}
+
+.progress-handle {
+    position: absolute;
+    top: -4px;
+    left: 20%;
+    width: 12px;
+    height: 12px;
+    background: #e74c3c;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #ffeef8;
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #e74c3c;
+    color: white;
+    transform: scale(1.1);
+}
+
+.music-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-text-btn {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Page 5 Styles */
+.thank-you-header {
+    margin-bottom: 30px;
+}
+
+.from-bhal {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.thank-you-title {
+    color: #e74c3c;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.thank-you-subtitle {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thank-you-message {
+    margin: 30px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.hello-kitty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.kitty {
+    font-size: 48px;
+}
+
+.kitty-sign {
+    background: white;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+}
+
+.final-footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Common Button Styles */
+.next-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.next-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .tic-tac-toe {
+        max-width: 200px;
+    }
+    
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .album-art {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .character1, .character2 {
+        font-size: 36px;
+    }
+}
+
+/* Animation for page transitions */
+.page {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
