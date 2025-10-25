@@ -19,38 +19,10 @@ body {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 0.5s ease-in-out;
 }
 
 .page.active {
     display: block;
-    opacity: 1;
-    transform: translateX(0);
-    animation: slideInFromRight 0.6s ease-out;
-}
-
-@keyframes slideInFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideOutToLeft {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
 }
 
 .card {
@@ -122,54 +94,24 @@ body {
     font-size: 16px;
 }
 
-/* Two Girls Styling */
-.two-girls-container {
+.dancing-characters {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
-    perspective: 1000px;
+    gap: 20px;
 }
 
-.two-girls-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    position: relative;
+.boy, .girl {
+    font-size: 48px;
+    animation: dance 2s infinite;
 }
 
-.girl-1, .girl-2 {
-    font-size: 60px;
-    animation: float 3s ease-in-out infinite;
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
-}
-
-.girl-1 {
-    animation-delay: 0s;
-    transform: rotate(-5deg);
-}
-
-.girl-2 {
-    animation-delay: 0.5s;
-    transform: rotate(5deg);
-}
-
-@keyframes float {
-    0%, 100% { 
-        transform: translateY(0px) rotate(var(--rotation, 0deg)); 
-    }
-    50% { 
-        transform: translateY(-15px) rotate(var(--rotation, 0deg)); 
-    }
-}
-
-.girl-1 {
-    --rotation: -5deg;
-}
-
-.girl-2 {
-    --rotation: 5deg;
+@keyframes dance {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(5deg); }
+    50% { transform: translateY(0px) rotate(0deg); }
+    75% { transform: translateY(-10px) rotate(-5deg); }
 }
 
 /* Page 2 Styles */
