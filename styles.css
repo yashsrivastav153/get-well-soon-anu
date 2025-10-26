@@ -10,10 +10,11 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body::before {
@@ -39,6 +40,8 @@ body::after {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    overflow-y: auto;
+    max-height: 100vh;
 }
 
 .page.active {
@@ -52,8 +55,11 @@ body::after {
     box-shadow: 0 15px 40px rgba(255, 105, 180, 0.3);
     text-align: center;
     position: relative;
-    min-height: 600px;
+    min-height: auto;
+    max-height: none;
     border: 3px solid #ffb3d9;
+    margin: 20px auto;
+    overflow: visible;
 }
 
 .card::before {
