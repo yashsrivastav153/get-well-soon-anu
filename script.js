@@ -8,7 +8,7 @@ let currentSong = 0;
 const photos = [
     {
         image: "images/128fd157-e76c-4b48-9320-34061828d6b4.jpg",
-        caption: "Our beautiful memories together 💙"
+        caption: "Our precious childhood memories 👶❤️"
     },
     {
         image: "images/3497f413-ebed-4652-a7ef-fdf5c6c8ea1d.jpg",
@@ -20,7 +20,7 @@ const photos = [
     },
     {
         image: "images/7aba7fb7-e36a-4d82-9e7f-5907ef042c96.jpg",
-        caption: "Our precious childhood memories 👶❤️"
+        caption: "Our beautiful memories together 💙"
     }
 ];
 
