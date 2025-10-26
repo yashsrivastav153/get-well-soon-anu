@@ -28,23 +28,23 @@ const photos = [
 const songs = [
     { 
         title: "Our Special Song 1 🎵", 
-        audio: "songs/WhatsApp Audio 2025-10-26 at 1.10.15 PM.mpeg",
-        cover: "songs/76a766b7-7bf4-4713-8c2c-1ef5076d800a.jpg"
+        audio: "SONGS/song1.mpeg",
+        cover: "SONGS/cover1.jpg"
     },
     { 
         title: "Our Special Song 2 🎶", 
-        audio: "songs/WhatsApp Audio 2025-10-26 at 1.11.03 PM.mpeg",
-        cover: "songs/94799aeb-2697-4f18-aa26-c47bca7a5b6c.jpg"
+        audio: "SONGS/song2.mpeg",
+        cover: "SONGS/cover2.jpg"
     },
     { 
         title: "Our Special Song 3 🎼", 
-        audio: "songs/WhatsApp Audio 2025-10-26 at 1.12.13 PM.mpeg",
-        cover: "songs/cb22050e-f03b-48c9-b06d-11959d48b1ca.jpg"
+        audio: "SONGS/song3.mpeg",
+        cover: "SONGS/cover3.jpg"
     },
     { 
         title: "Our Special Song 4 🎤", 
-        audio: "songs/WhatsApp Audio 2025-10-26 at 1.13.06 PM.mpeg",
-        cover: "songs/fa2e2bde-9207-43a6-93d0-01b504a71421.jpg"
+        audio: "SONGS/song4.mpeg",
+        cover: "SONGS/cover4.jpg"
     }
 ];
 
