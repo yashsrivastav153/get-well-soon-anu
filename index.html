@@ -61,8 +61,15 @@
                 <div class="cell" data-cell="8">🍫</div>
             </div>
             
-            <div id="success-message" class="success-message hidden">
-                <p>You successfully unlocked a chocolate treat, yay 🍫</p>
+            <!-- Success Popup -->
+            <div id="success-popup" class="success-popup hidden">
+                <div class="popup-overlay-chocolate"></div>
+                <div class="popup-content-chocolate">
+                    <div class="confetti-wrapper"></div>
+                    <h2 class="popup-title-chocolate">🎉 Congratulations! 🎉</h2>
+                    <p class="popup-message-chocolate">You successfully unlocked a chocolate treat, yay 🍫</p>
+                    <button class="popup-close-btn" onclick="closeSuccessPopup()">✕</button>
+                </div>
             </div>
             
             <button id="next-btn-2" class="next-btn hidden" onclick="showPage(3)">Next</button>

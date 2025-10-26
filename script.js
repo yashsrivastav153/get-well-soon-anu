@@ -72,14 +72,52 @@ function fillCell(cell) {
 }
 
 function showSuccessMessage() {
-    const successMessage = document.getElementById('success-message');
+    const popup = document.getElementById('success-popup');
     const nextBtn = document.getElementById('next-btn-2');
     
-    successMessage.classList.remove('hidden');
-    nextBtn.classList.remove('hidden');
+    // Show popup
+    popup.classList.remove('hidden');
     
-    // Add celebration animation
-    successMessage.style.animation = 'bounce 0.6s ease-in-out';
+    // Create confetti
+    createConfettiExplosion();
+    
+    // Show next button after delay
+    setTimeout(() => {
+        nextBtn.classList.remove('hidden');
+    }, 2000);
+}
+
+function closeSuccessPopup() {
+    const popup = document.getElementById('success-popup');
+    popup.classList.add('hidden');
+}
+
+function createConfettiExplosion() {
+    const confettiWrapper = document.querySelector('.confetti-wrapper');
+    confettiWrapper.innerHTML = ''; // Clear previous confetti
+    
+    // Create 50 confetti pieces
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti-piece');
+        
+        // Random position
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.animationDelay = Math.random() * 0.5 + 's';
+        confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        
+        // Random size
+        const size = Math.random() * 10 + 5;
+        confetti.style.width = size + 'px';
+        confetti.style.height = size + 'px';
+        
+        confettiWrapper.appendChild(confetti);
+    }
+    
+    // Clear confetti after animation
+    setTimeout(() => {
+        confettiWrapper.innerHTML = '';
+    }, 4000);
 }
 
 // Photo navigation functions
