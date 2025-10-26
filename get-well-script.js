@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Initialize games
-    initMemoryGame();
     initScrambleGame();
 });
 
@@ -179,7 +178,7 @@ function showScrambleSuccess() {
     const popup = document.getElementById('success-popup-scramble');
     popup.classList.add('show');
     createConfettiExplosion('confetti-scramble');
-    document.getElementById('nextBtn3').style.display = 'inline-block';
+        document.getElementById('nextBtn2').style.display = 'inline-block';
 }
 
 function closeScramblePopup() {

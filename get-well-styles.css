@@ -94,24 +94,28 @@ body::after {
 .main-title {
     font-size: 4rem;
     color: #FF1493;
-    text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.9), 3px 3px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 
+        3px 3px 0px #FFF,
+        -3px -3px 0px #FFF,
+        3px -3px 0px #FFF,
+        -3px 3px 0px #FFF,
+        5px 5px 10px rgba(0, 0, 0, 0.8);
     margin-bottom: 20px;
     font-weight: bold;
     animation: heartbeat 2s ease-in-out infinite;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 20px;
 }
 
 .name-title {
     font-size: 5rem;
     color: #FF1493;
-    text-shadow: 5px 5px 15px rgba(255, 255, 255, 0.9), 3px 3px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 
+        3px 3px 0px #FFF,
+        -3px -3px 0px #FFF,
+        3px -3px 0px #FFF,
+        -3px 3px 0px #FFF,
+        5px 5px 10px rgba(0, 0, 0, 0.8);
     font-weight: bold;
     animation: heartbeat 2s ease-in-out infinite;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 20px;
 }
 
 
