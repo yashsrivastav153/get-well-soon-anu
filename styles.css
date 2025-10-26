@@ -5,13 +5,33 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ffeef8, #f0f8ff);
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffb3d9, #ffc4e1, #ffe5f0);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '🎀';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    opacity: 0.3;
+}
+
+body::after {
+    content: '🌸';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    opacity: 0.3;
 }
 
 .page {
@@ -26,13 +46,32 @@ body {
 }
 
 .card {
-    background: #fff;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+    border-radius: 30px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.3);
     text-align: center;
     position: relative;
     min-height: 600px;
+    border: 3px solid #ffb3d9;
+}
+
+.card::before {
+    content: '🎀';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+.card::after {
+    content: '🌸';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+    opacity: 0.5;
 }
 
 /* Page 1 Styles */
@@ -94,24 +133,127 @@ body {
     font-size: 16px;
 }
 
-.dancing-characters {
+/* Hugging Girls Animation */
+.hugging-girls {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     margin: 30px 0;
-    gap: 20px;
+    position: relative;
+    height: 150px;
 }
 
-.boy, .girl {
-    font-size: 48px;
-    animation: dance 2s infinite;
+.girl-left, .girl-right {
+    position: relative;
+    width: 60px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes dance {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-10px) rotate(5deg); }
-    50% { transform: translateY(0px) rotate(0deg); }
-    75% { transform: translateY(-10px) rotate(-5deg); }
+.girl-left {
+    animation: hugLeft 3s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+.girl-right {
+    animation: hugRight 3s ease-in-out infinite;
+    transform-origin: bottom center;
+    margin-left: -20px;
+}
+
+.girl-face {
+    font-size: 40px;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 2px 5px rgba(255, 105, 180, 0.3));
+}
+
+.girl-body {
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(135deg, #ffb3d9, #ff99cc);
+    border-radius: 25px 25px 30px 30px;
+    position: relative;
+}
+
+.girl-body::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 30px;
+    height: 8px;
+    background: #ffb3d9;
+    border-radius: 20px;
+    transform: rotate(-20deg);
+}
+
+.girl-body::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    width: 30px;
+    height: 8px;
+    background: #ffb3d9;
+    border-radius: 20px;
+    transform: rotate(20deg);
+}
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.heart {
+    font-size: 20px;
+    animation: floatHeart 2s ease-in-out infinite;
+}
+
+.heart:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.heart:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes hugLeft {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(5px) rotate(2deg);
+    }
+}
+
+@keyframes hugRight {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-5px) rotate(-2deg);
+    }
+}
+
+@keyframes floatHeart {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+        opacity: 0.7;
+    }
 }
 
 /* Page 2 Styles */
@@ -340,21 +482,28 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px 0;
-    gap: 15px;
+    gap: 10px;
 }
 
 .nav-btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: none;
-    background: #e74c3c;
+    border: 2px solid #ffb3d9;
+    background: linear-gradient(135deg, #ff99cc, #ffb3d9);
     color: white;
     font-size: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 3px 10px rgba(255, 105, 180, 0.3);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5);
 }
 
 .nav-btn:disabled {
@@ -364,11 +513,37 @@ body {
 
 .photo-display {
     flex: 1;
-    min-height: 200px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #fff0f5, #ffe4f0);
+    border: 3px solid #ffb3d9;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+    position: relative;
+}
+
+.photo-display::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 40px;
+    height: 20px;
+    background: #ffb3d9;
+    border-radius: 10px 10px 0 0;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-display::after {
+    content: '🎀';
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 20px;
 }
 
 .cartoon-image {
@@ -607,9 +782,9 @@ body {
 
 /* Common Button Styles */
 .next-btn {
-    background: #e74c3c;
+    background: linear-gradient(135deg, #ff99cc, #ffb3d9);
     color: white;
-    border: none;
+    border: 2px solid #ff80b3;
     padding: 15px 30px;
     border-radius: 25px;
     font-size: 16px;
@@ -617,12 +792,13 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
 }
 
 .next-btn:hover {
-    background: #c0392b;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    background: linear-gradient(135deg, #ff80b3, #ff99cc);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
 }
 
 /* Responsive Design */
