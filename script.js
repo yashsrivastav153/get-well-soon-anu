@@ -7,28 +7,20 @@ let currentSong = 0;
 // Photo data for the memories section
 const photos = [
     {
-        characters: { shinchan: "👦", himawari: "👶" },
-        message: {
-            hindi1: "Tu abhi choti hai",
-            hindi2: "kam bola kar samjhi",
-            hehe: "Hehe"
-        }
+        image: "photos/128fd157-e76c-4b48-9320-34061828d6b4.jpg",
+        caption: "Our beautiful memories together 💙"
     },
     {
-        characters: { shinchan: "👦", himawari: "👧" },
-        message: {
-            hindi1: "Pehle bhi cute thi",
-            hindi2: "ab aur bhi cute ho gayi",
-            hehe: "😊"
-        }
+        image: "photos/3497f413-ebed-4652-a7ef-fdf5c6c8ea1d.jpg",
+        caption: "Surrounded by love and hearts 💕"
     },
     {
-        characters: { shinchan: "👦", himawari: "👶" },
-        message: {
-            hindi1: "Chocolate kha le",
-            hindi2: "bhai ne gift diya hai",
-            hehe: "🍫"
-        }
+        image: "photos/4a76fe11-8d53-4c98-950e-27b63e58303d.jpg",
+        caption: "Sisters forever and always 😎"
+    },
+    {
+        image: "photos/7aba7fb7-e36a-4d82-9e7f-5907ef042c96.jpg",
+        caption: "Our precious childhood memories 👶❤️"
     }
 ];
 
@@ -140,23 +132,16 @@ function updatePhotoDisplay() {
     const currentPhotoData = photos[currentPhoto];
     
     photoDisplay.innerHTML = `
-        <div class="cartoon-image">
-            <div class="shinchan">${currentPhotoData.characters.shinchan}</div>
-            <div class="himawari">${currentPhotoData.characters.himawari}</div>
-        </div>
-        <div class="photo-message">
-            <p class="hindi-text">${currentPhotoData.message.hindi1}</p>
-            <p class="hindi-text">${currentPhotoData.message.hindi2}</p>
-            <p class="hehe">${currentPhotoData.message.hehe}</p>
-        </div>
+        <img src="${currentPhotoData.image}" alt="Memory ${currentPhoto + 1}" class="memory-photo">
+        <p class="photo-caption">${currentPhotoData.caption}</p>
     `;
     
     // Update navigation buttons
     const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+    const nextBtnNav = document.querySelectorAll('.nav-btn')[1];
     
-    prevBtn.disabled = currentPhoto === 0;
-    nextBtn.disabled = currentPhoto === photos.length - 1;
+    if (prevBtn) prevBtn.disabled = currentPhoto === 0;
+    if (nextBtnNav) nextBtnNav.disabled = currentPhoto === photos.length - 1;
 }
 
 // Music player functions
