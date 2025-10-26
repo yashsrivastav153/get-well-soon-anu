@@ -210,12 +210,24 @@ function initializeAudioPlayer() {
                 document.querySelector('.play-pause').textContent = '▶️';
             }
         });
+        
+        audioPlayer.addEventListener('error', (e) => {
+            console.error('Audio error:', e);
+            console.error('Failed to load:', audioPlayer.src);
+            alert('Error loading audio file. Please check the file exists and is accessible.');
+        });
+        
+        audioPlayer.addEventListener('canplay', () => {
+            console.log('Audio can play:', audioPlayer.src);
+        });
     }
 }
 
 function loadSong(index) {
     const song = songs[index];
+    console.log('Loading song:', song.title, song.audio);
     audioPlayer.src = song.audio;
+    audioPlayer.load(); // Force reload
     updateMusicDisplay();
 }
 
@@ -267,23 +279,53 @@ function togglePlay() {
     }
 }
 
-function rewind() {
-    if (audioPlayer) {
+function previousSong() {
+    if (!audioPlayer) {
+        initializeAudioPlayer();
+    }
+    
+    // Go to previous song
+    if (currentSong > 0) {
+        currentSong--;
+        loadSong(currentSong);
+        if (isPlaying) {
+            audioPlayer.play();
+        }
+    } else {
+        // If at first song, restart it
         audioPlayer.currentTime = 0;
     }
 }
 
-function fastForward() {
-    if (audioPlayer) {
-        // Skip to next song
-        if (currentSong < songs.length - 1) {
-            currentSong++;
-            loadSong(currentSong);
-            if (isPlaying) {
-                audioPlayer.play();
-            }
+function nextSong() {
+    if (!audioPlayer) {
+        initializeAudioPlayer();
+    }
+    
+    // Skip to next song
+    if (currentSong < songs.length - 1) {
+        currentSong++;
+        loadSong(currentSong);
+        if (isPlaying) {
+            audioPlayer.play();
+        }
+    } else {
+        // If at last song, go to first song
+        currentSong = 0;
+        loadSong(currentSong);
+        if (isPlaying) {
+            audioPlayer.play();
         }
     }
+}
+
+// Keep old function names for compatibility
+function rewind() {
+    previousSong();
+}
+
+function fastForward() {
+    nextSong();
 }
 
 function animateProgress() {
@@ -397,3 +439,4 @@ document.addEventListener('touchend', function(e) {
         }, 100);
     }
 });
+
