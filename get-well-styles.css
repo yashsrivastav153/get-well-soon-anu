@@ -94,31 +94,43 @@ body::after {
 }
 
 .corner-title {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    color: #FF1493;
+    text-shadow: 
+        4px 4px 0px #FFF,
+        -4px -4px 0px #FFF,
+        4px -4px 0px #FFF,
+        -4px 4px 0px #FFF,
+        6px 6px 15px rgba(0, 0, 0, 0.9);
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+    animation: pulseGlow 1.5s ease-in-out infinite;
+    text-transform: uppercase;
+}
+
+.corner-subtitle {
+    font-size: 3.5rem;
     color: #FF1493;
     text-shadow: 
         3px 3px 0px #FFF,
         -3px -3px 0px #FFF,
         3px -3px 0px #FFF,
         -3px 3px 0px #FFF,
-        5px 5px 10px rgba(0, 0, 0, 0.8);
+        6px 6px 15px rgba(0, 0, 0, 0.9);
     font-weight: 900;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    animation: heartbeat 2s ease-in-out infinite;
+    animation: pulseGlow 1.5s ease-in-out infinite 0.3s;
 }
 
-.corner-subtitle {
-    font-size: 2rem;
-    color: #FF69B4;
-    text-shadow: 
-        2px 2px 0px #FFF,
-        -2px -2px 0px #FFF,
-        2px -2px 0px #FFF,
-        -2px 2px 0px #FFF,
-        5px 5px 10px rgba(0, 0, 0, 0.8);
-    font-weight: 900;
-    animation: heartbeat 2s ease-in-out infinite 0.5s;
+@keyframes pulseGlow {
+    0%, 100% { 
+        transform: scale(1); 
+        filter: drop-shadow(0 0 10px #FF1493);
+    }
+    50% { 
+        transform: scale(1.08); 
+        filter: drop-shadow(0 0 25px #FF1493);
+    }
 }
 
 .centered-next-btn {
