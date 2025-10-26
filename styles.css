@@ -887,8 +887,31 @@ body::after {
 
 .thank-you-message {
     margin: 30px 0;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #555;
+}
+
+.thank-you-message p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.love-message {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #ff1493 !important;
+    margin-top: 25px !important;
+    text-align: center;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 .hello-kitty {
