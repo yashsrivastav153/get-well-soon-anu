@@ -909,7 +909,15 @@ body::after {
 }
 
 /* Common Button Styles */
-.next-btn {
+/* Button Group Container */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.next-btn, .back-btn {
     background: linear-gradient(135deg, #ff99cc, #ffb3d9);
     color: white;
     border: 2px solid #ff80b3;
@@ -919,14 +927,34 @@ body::after {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 20px;
     box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+    flex: 1;
+    max-width: 150px;
+}
+
+.back-btn {
+    background: linear-gradient(135deg, #d4a5ff, #e6b3ff);
+    border: 2px solid #c48aff;
+}
+
+.next-btn:hover, .back-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
 }
 
 .next-btn:hover {
     background: linear-gradient(135deg, #ff80b3, #ff99cc);
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #c48aff, #d4a5ff);
+}
+
+/* Single button centering */
+.card > .back-btn {
+    margin: 20px auto 0;
+    display: block;
+    max-width: 150px;
 }
 
 /* Responsive Design */
