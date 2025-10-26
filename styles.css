@@ -76,52 +76,43 @@ body::after {
 
 /* Page 1 Styles */
 .header h1 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 5px;
-    font-weight: normal;
+    color: #ff1493;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .header h2 {
-    color: #e74c3c;
-    font-size: 28px;
+    color: #ff69b4;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #ff1493;
+    font-size: 18px;
+    font-style: italic;
+    margin: 10px 0 20px 0;
 }
 
 .diamond {
-    color: #e74c3c;
-    font-size: 20px;
-}
-
-.greeting {
-    margin: 20px 0;
-}
-
-.bhai-dooj {
-    color: #e74c3c;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.happy {
-    color: #e74c3c;
-    font-size: 32px;
-    font-style: italic;
-    margin: 10px 0;
-}
-
-.dear-sis {
-    color: #333;
+    color: #ff69b4;
     font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
 }
 
 .message {
     margin: 20px 0;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #555;
+    text-align: center;
+}
+
+.message p {
+    margin-bottom: 15px;
 }
 
 .diamonds {
