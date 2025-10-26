@@ -144,10 +144,12 @@ body::after {
 }
 
 .hugging-girls-image {
-    max-width: 250px;
-    max-height: 200px;
+    max-width: 280px;
+    max-height: 220px;
     animation: gentleFloat 3s ease-in-out infinite;
-    filter: drop-shadow(0 5px 15px rgba(255, 105, 180, 0.3));
+    filter: drop-shadow(0 5px 15px rgba(255, 105, 180, 0.4));
+    border-radius: 20px;
+    object-fit: contain;
 }
 
 .hugging-girls-fallback {
