@@ -114,13 +114,6 @@ body::after {
     border-radius: 20px;
 }
 
-.floating-btn {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-}
 
 @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
