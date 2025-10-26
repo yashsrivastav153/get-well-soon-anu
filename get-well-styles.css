@@ -554,7 +554,7 @@ body::after {
     box-shadow: 0 5px 20px rgba(255, 105, 180, 0.2);
 }
 
-/* Page 5: Full Page Image with Bottom Text */
+/* Page 4: Full Page Image with Top Message */
 .full-photo-card {
     position: relative;
     width: 100vw;
@@ -562,6 +562,30 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.top-message {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.from-yash-to-anu {
+    font-size: 2.5rem;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    color: #FF1493;
+    text-shadow: 
+        3px 3px 0px #FFF,
+        -3px -3px 0px #FFF,
+        3px -3px 0px #FFF,
+        -3px 3px 0px #FFF,
+        5px 5px 15px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    animation: heartbeat 2s ease-in-out infinite;
+    letter-spacing: 2px;
 }
 
 .full-page-image {
