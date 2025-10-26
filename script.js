@@ -7,19 +7,19 @@ let currentSong = 0;
 // Photo data for the memories section
 const photos = [
     {
-        image: "photos/128fd157-e76c-4b48-9320-34061828d6b4.jpg",
+        image: "images/128fd157-e76c-4b48-9320-34061828d6b4.jpg",
         caption: "Our beautiful memories together 💙"
     },
     {
-        image: "photos/3497f413-ebed-4652-a7ef-fdf5c6c8ea1d.jpg",
+        image: "images/3497f413-ebed-4652-a7ef-fdf5c6c8ea1d.jpg",
         caption: "Surrounded by love and hearts 💕"
     },
     {
-        image: "photos/4a76fe11-8d53-4c98-950e-27b63e58303d.jpg",
+        image: "images/4a76fe11-8d53-4c98-950e-27b63e58303d.jpg",
         caption: "Sisters forever and always 😎"
     },
     {
-        image: "photos/7aba7fb7-e36a-4d82-9e7f-5907ef042c96.jpg",
+        image: "images/7aba7fb7-e36a-4d82-9e7f-5907ef042c96.jpg",
         caption: "Our precious childhood memories 👶❤️"
     }
 ];
