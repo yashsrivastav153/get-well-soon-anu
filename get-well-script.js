@@ -42,7 +42,7 @@ let flippedCards = [];
 let matchedPairs = 0;
 let moves = 0;
 
-const emojis = ['🌸', '🌹', '🌷', '💖', '🦋', '🌺', '💐', '🌼'];
+const emojis = ['🌸', '🌹', '💖'];
 
 function initMemoryGame() {
     const gameContainer = document.getElementById('memoryGame');
@@ -95,7 +95,7 @@ function checkMemoryMatch() {
         matchedPairs++;
         document.getElementById('matches').textContent = matchedPairs;
         
-        if (matchedPairs === 8) {
+        if (matchedPairs === 3) {
             setTimeout(showMemorySuccess, 500);
         }
     } else {
@@ -122,11 +122,9 @@ function closeMemoryPopup() {
 
 // ==================== WORD SCRAMBLE GAME ====================
 const words = [
+    { word: 'LOVE', scrambled: 'EVOL', hint: 'What we feel for Anu' },
     { word: 'SMILE', scrambled: 'ILMSE', hint: 'What makes everyone happy' },
-    { word: 'STRONG', scrambled: 'TGROSN', hint: 'What you are' },
-    { word: 'BRAVE', scrambled: 'VBERA', hint: 'Fearless and courageous' },
-    { word: 'BEAUTIFUL', scrambled: 'FTULIBAEU', hint: 'What describes Anu' },
-    { word: 'SHINE', scrambled: 'HNISE', hint: 'What stars do' }
+    { word: 'TOGETHER', scrambled: 'EHTOGRET', hint: 'Always here for you' }
 ];
 
 let currentWordIndex = 0;
