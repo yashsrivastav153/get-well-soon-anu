@@ -24,12 +24,32 @@ const photos = [
     }
 ];
 
-// Song data
+// Song data with audio files and cover images
 const songs = [
-    { title: "Phoolo Ka Taaron Ka", duration: "0:25" },
-    { title: "Bhai Dooj Special", duration: "0:30" },
-    { title: "Sister Love Song", duration: "0:20" }
+    { 
+        title: "Our Special Song 1 🎵", 
+        audio: "songs/WhatsApp Audio 2025-10-26 at 1.10.15 PM.mpeg",
+        cover: "songs/76a766b7-7bf4-4713-8c2c-1ef5076d800a.jpg"
+    },
+    { 
+        title: "Our Special Song 2 🎶", 
+        audio: "songs/WhatsApp Audio 2025-10-26 at 1.11.03 PM.mpeg",
+        cover: "songs/94799aeb-2697-4f18-aa26-c47bca7a5b6c.jpg"
+    },
+    { 
+        title: "Our Special Song 3 🎼", 
+        audio: "songs/WhatsApp Audio 2025-10-26 at 1.12.13 PM.mpeg",
+        cover: "songs/cb22050e-f03b-48c9-b06d-11959d48b1ca.jpg"
+    },
+    { 
+        title: "Our Special Song 4 🎤", 
+        audio: "songs/WhatsApp Audio 2025-10-26 at 1.13.06 PM.mpeg",
+        cover: "songs/fa2e2bde-9207-43a6-93d0-01b504a71421.jpg"
+    }
 ];
+
+// Audio player element
+let audioPlayer = null;
 
 // Page navigation
 function showPage(pageNumber) {
@@ -46,6 +66,11 @@ function showPage(pageNumber) {
     if (pageNumber === 3) {
         updatePhotoDisplay();
     } else if (pageNumber === 4) {
+        // Initialize audio player when music page is opened
+        if (!audioPlayer) {
+            initializeAudioPlayer();
+            loadSong(currentSong);
+        }
         updateMusicDisplay();
     }
 }
@@ -145,59 +170,120 @@ function updatePhotoDisplay() {
 }
 
 // Music player functions
+function initializeAudioPlayer() {
+    if (!audioPlayer) {
+        audioPlayer = new Audio();
+        
+        // Event listeners for audio player
+        audioPlayer.addEventListener('loadedmetadata', () => {
+            updateMusicDisplay();
+        });
+        
+        audioPlayer.addEventListener('timeupdate', () => {
+            if (audioPlayer.duration) {
+                const percentage = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+                const progressFill = document.querySelector('.progress-fill');
+                const progressHandle = document.querySelector('.progress-handle');
+                const timeDisplay = document.querySelector('.time:first-child');
+                
+                if (progressFill) progressFill.style.width = percentage + '%';
+                if (progressHandle) progressHandle.style.left = percentage + '%';
+                
+                // Update time display
+                if (timeDisplay) {
+                    const minutes = Math.floor(audioPlayer.currentTime / 60);
+                    const seconds = Math.floor(audioPlayer.currentTime % 60);
+                    timeDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                }
+            }
+        });
+        
+        audioPlayer.addEventListener('ended', () => {
+            // Auto play next song
+            if (currentSong < songs.length - 1) {
+                currentSong++;
+                loadSong(currentSong);
+                audioPlayer.play();
+            } else {
+                // Last song ended
+                isPlaying = false;
+                document.querySelector('.play-pause').textContent = '▶️';
+            }
+        });
+    }
+}
+
+function loadSong(index) {
+    const song = songs[index];
+    audioPlayer.src = song.audio;
+    updateMusicDisplay();
+}
+
 function updateMusicDisplay() {
     const songTitle = document.querySelector('.now-playing h3');
+    const albumCover = document.querySelector('.album-art');
     const duration = document.querySelector('.time:last-child');
     
-    songTitle.textContent = songs[currentSong].title;
-    duration.textContent = songs[currentSong].duration;
+    // Update song title
+    if (songTitle) {
+        songTitle.textContent = songs[currentSong].title;
+    }
+    
+    // Update album cover with photo
+    if (albumCover) {
+        albumCover.innerHTML = `
+            <img src="${songs[currentSong].cover}" alt="Song Cover" class="song-cover-image">
+        `;
+    }
+    
+    // Update duration when loaded
+    if (audioPlayer && audioPlayer.duration) {
+        const minutes = Math.floor(audioPlayer.duration / 60);
+        const seconds = Math.floor(audioPlayer.duration % 60);
+        if (duration) {
+            duration.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+    } else {
+        if (duration) duration.textContent = '--:--';
+    }
 }
 
 function togglePlay() {
+    if (!audioPlayer) {
+        initializeAudioPlayer();
+        loadSong(currentSong);
+    }
+    
     const playPauseBtn = document.querySelector('.play-pause');
     
     if (isPlaying) {
+        audioPlayer.pause();
         playPauseBtn.textContent = '▶️';
         isPlaying = false;
-        // Stop any playing animation
     } else {
+        audioPlayer.play();
         playPauseBtn.textContent = '⏸️';
         isPlaying = true;
-        // Start playing animation
-        animateProgress();
     }
 }
 
 function rewind() {
-    const progressFill = document.querySelector('.progress-fill');
-    const progressHandle = document.querySelector('.progress-handle');
-    
-    progressFill.style.width = '0%';
-    progressHandle.style.left = '0%';
-    
-    // Reset time display
-    document.querySelector('.time:first-child').textContent = '0:00';
+    if (audioPlayer) {
+        audioPlayer.currentTime = 0;
+    }
 }
 
 function fastForward() {
-    const progressFill = document.querySelector('.progress-fill');
-    const progressHandle = document.querySelector('.progress-handle');
-    
-    progressFill.style.width = '100%';
-    progressHandle.style.left = '100%';
-    
-    // Update time display
-    const duration = songs[currentSong].duration;
-    document.querySelector('.time:first-child').textContent = duration;
-    
-    // Auto advance to next song after a delay
-    setTimeout(() => {
+    if (audioPlayer) {
+        // Skip to next song
         if (currentSong < songs.length - 1) {
             currentSong++;
-            updateMusicDisplay();
-            rewind();
+            loadSong(currentSong);
+            if (isPlaying) {
+                audioPlayer.play();
+            }
         }
-    }, 1000);
+    }
 }
 
 function animateProgress() {
