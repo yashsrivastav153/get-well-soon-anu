@@ -1,20 +1,5 @@
-// Background Music - Auto play with low volume
+// Initialize games on load
 document.addEventListener('DOMContentLoaded', function() {
-    const bgMusic = document.getElementById('bgMusic');
-    bgMusic.volume = 0.2; // Set to 20% volume (lite volume)
-    
-    // Try to autoplay (some browsers block autoplay without user interaction)
-    const playPromise = bgMusic.play();
-    if (playPromise !== undefined) {
-        playPromise.catch(error => {
-            // Auto-play was prevented, play on first user interaction
-            document.body.addEventListener('click', () => {
-                bgMusic.play().catch(e => console.log('Audio play failed:', e));
-            }, { once: true });
-        });
-    }
-    
-    // Initialize games
     initScrambleGame();
 });
 
@@ -27,12 +12,6 @@ function showPage(pageId) {
     
     const targetPage = document.getElementById(pageId);
     targetPage.classList.add('active');
-    
-    // Ensure music continues playing
-    const bgMusic = document.getElementById('bgMusic');
-    if (bgMusic.paused) {
-        bgMusic.play().catch(e => console.log('Audio play failed:', e));
-    }
 }
 
 // ==================== MEMORY GAME ====================
